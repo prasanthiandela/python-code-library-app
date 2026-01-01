@@ -3,35 +3,39 @@ services:
   db:
     image: dbimg
     ports:
-      - "3306:3306"
+     - "3306:3306"
     deploy:
       replicas: 2
 
   auth_service:
     image: authimg
-    ports:
-      - "5001:5001"
+   ports:
+     - "5001:5001"
+
     deploy:
       replicas: 2
 
   book_service:
     image: bookimg
     ports:
-      - "5002:5002"
+     - "5002:5002"
+
     deploy:
       replicas: 2
 
   borrow_service:
     image: borrowimg
     ports:
-      - "5003:5003"
+     - "5003:5003"
+
     deploy:
       replicas: 2
 
   frontend:
     image: frontendimg
     ports:
-      - "5000:5000" 
+     - "5000:5000"
+
     deploy:
       replicas: 2
     
