@@ -9,7 +9,7 @@ services:
 
   auth_service:
     image: authimg
-   ports:
+    ports:
      - "5001:5001"
 
     deploy:
