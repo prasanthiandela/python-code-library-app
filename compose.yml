@@ -14,7 +14,6 @@ services:
     deploy:
       replicas: 2
 
-
   book_service:
     image: bookimg
     ports:
@@ -29,8 +28,12 @@ services:
     deploy:
       replicas: 2
 
-
   frontend:
     image: frontendimg
     ports:
-      - "5000:5000"                                                                                                          5,1           Top
+      - "5000:5000" 
+    deploy:
+      replicas: 2
+    
+    
+    5,1           Top
